@@ -1,0 +1,2062 @@
+(kicad_pcb
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(general
+		(thickness 1.6)
+		(legacy_teardrops no)
+	)
+	(paper "USLetter")
+	(title_block
+		(title "${PROJECTNAME}")
+		(date "${DATE}")
+		(rev "${VERSION}")
+	)
+	(layers
+		(0 "F.Cu" signal)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+	)
+	(setup
+		(pad_to_mask_clearance 0)
+		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
+		(pcbplotparams
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
+			(disableapertmacros no)
+			(usegerberextensions no)
+			(usegerberattributes yes)
+			(usegerberadvancedattributes yes)
+			(creategerberjobfile yes)
+			(dashed_line_dash_ratio 12.000000)
+			(dashed_line_gap_ratio 3.000000)
+			(svgprecision 4)
+			(plotframeref no)
+			(mode 1)
+			(useauxorigin no)
+			(hpglpennumber 1)
+			(hpglpenspeed 20)
+			(hpglpendiameter 15.000000)
+			(pdf_front_fp_property_popups yes)
+			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
+			(dxfpolygonmode yes)
+			(dxfimperialunits yes)
+			(dxfusepcbnewfont yes)
+			(psnegative no)
+			(psa4output no)
+			(plot_black_and_white yes)
+			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
+			(subtractmaskfromsilk no)
+			(outputformat 1)
+			(mirror no)
+			(drillshape 1)
+			(scaleselection 1)
+			(outputdirectory "")
+		)
+	)
+	(property "DATE" "unreleased")
+	(property "VERSION" "unreleased")
+	(net 0 "")
+	(net 1 "unconnected-(R1-Pad1)")
+	(net 2 "unconnected-(R1-Pad2)")
+	(net 3 "unconnected-(U1-Q0-Pad15)")
+	(net 4 "unconnected-(U1-Q7S-Pad9)")
+	(net 5 "unconnected-(U1-STCP-Pad12)")
+	(net 6 "unconnected-(U1-Q1-Pad1)")
+	(net 7 "unconnected-(U1-DS-Pad14)")
+	(net 8 "unconnected-(U1-Q2-Pad2)")
+	(net 9 "unconnected-(U1-GND-Pad8)")
+	(net 10 "unconnected-(U1-Q5-Pad5)")
+	(net 11 "unconnected-(U1-Q3-Pad3)")
+	(net 12 "unconnected-(U1-MR#-Pad10)")
+	(net 13 "unconnected-(U1-Q6-Pad6)")
+	(net 14 "unconnected-(U1-Q4-Pad4)")
+	(net 15 "unconnected-(U1-SHCP-Pad11)")
+	(net 16 "unconnected-(U1-OE#-Pad13)")
+	(net 17 "unconnected-(U1-Q7-Pad7)")
+	(net 18 "unconnected-(U1-VCC-Pad16)")
+	(footprint "PCM_JLCPCB:Hole_Tooling_JLCPCB"
+		(layer "F.Cu")
+		(uuid "567d25d4-f286-4df8-a285-696f399e8dae")
+		(at 127 33.02)
+		(property "Reference" "H2"
+			(at 0 -0.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d982282b-b902-42e1-befe-09a1ac8a87ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "70da273b-9cc1-40b7-b376-f009b0db06bd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/help/article/How-to-add-tooling-holes-for-PCB-assembly-order"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7022e1c4-0716-4d29-a974-83f02af26e50")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "1. Two or three tooling holes should be added on the PCB, they should be placed in opposite corners of the PCB and as far apart from one another as practical. 2. Tooling holes should be 1.152mm(45.4mil) round non-plated holes with 0.148mm solder mask expansion. 3. Tooling holes are only required for PCB assembly orders. 4. Please try to add tooling holes on empty space and keep them away from traces. If there is no enough room, you can add them to the copper area."
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc4a9f99-604b-4051-8450-8f374cc998aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Attrition Qty" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f2458e8-233f-4802-89eb-72ed4f85963d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Category" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f0df56ac-a403-405c-923b-ea31bc7f134d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Class" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19b7dbe4-9208-473e-ab0a-8a8c4907787a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0319ed5b-9142-4dc9-a844-3da9715cef96")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "de7eacae-ea91-47d0-ba30-db1159becdfc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Minimum Qty" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d131da1e-980e-4bc1-b90e-bad42727a76f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Operating Temperature Range" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fcb8fb58-4443-43e2-ac92-ffce7241491f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b4511ae7-0f39-4654-bf70-3737ab39037e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "48bf04f1-d194-4485-888d-53b8f934b533")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power(Watts)" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aee078c6-6a56-4c90-bd36-6cdb9cb273a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ea09ec05-f073-4344-bde9-d555d6f3994a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Process" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "42e8c5f3-6632-4338-8498-62af3559672e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Resistance" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "274c46e4-27f5-4ab1-b853-ec4c40188a69")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d6ec89a-ca0d-4e76-8e06-ad1a5ac43eed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Temperature Coefficient" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac217903-1447-448f-9171-bf42f4cc9630")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0cb88ba2-aeae-4d20-bab9-ea6eb4a8f1a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Type" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "751d1de2-d9de-4201-a9fa-6bbdba949e71")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/89c36961-f6ec-4f45-85f8-eab326df9496")
+		(sheetname "/")
+		(sheetfile "G1000-partial-panel.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "47793e7f-8247-4f34-a9d9-77e0ca1865b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 1 1)
+			(drill 1.152)
+			(layers "*.Cu" "*.Mask")
+			(solder_mask_margin 0.148)
+			(teardrops
+				(best_length_ratio 0.5)
+				(max_length 1)
+				(best_width_ratio 1)
+				(max_width 2)
+				(curved_edges no)
+				(filter_ratio 0.9)
+				(enabled no)
+				(allow_two_segments no)
+				(prefer_zone_connections no)
+			)
+			(uuid "583d2947-b16f-45ea-acc6-cd7dd7e4f888")
+		)
+		(zone
+			(net 0)
+			(net_name "")
+			(layers "F.Cu" "B.Cu" "F.SilkS" "B.SilkS" "F.Paste" "B.Paste" "B.CrtYd"
+				"F.CrtYd"
+			)
+			(uuid "5e924e5d-b511-40ce-a6d0-1f7816583cf8")
+			(hatch edge 0.5)
+			(connect_pads
+				(clearance 0)
+			)
+			(min_thickness 0.25)
+			(filled_areas_thickness no)
+			(keepout
+				(tracks not_allowed)
+				(vias not_allowed)
+				(pads not_allowed)
+				(copperpour not_allowed)
+				(footprints not_allowed)
+			)
+			(placement
+				(enabled no)
+				(sheetname "")
+			)
+			(fill
+				(thermal_gap 0.5)
+				(thermal_bridge_width 0.5)
+			)
+			(polygon
+				(pts
+					(xy 126 32.02) (xy 128 32.02) (xy 128 34.02) (xy 126 34.02)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(footprint "PCM_JLCPCB:R_0402"
+		(layer "F.Cu")
+		(uuid "7ae75483-9139-49b2-ae2e-e6f76c5042ec")
+		(at 65.37 77.58)
+		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+		(tags "resistor")
+		(property "Reference" "R1"
+			(at -1.05 -0.85 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "cb5885a1-b886-4f11-a801-ad00681cab68")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 0 0.2 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a9ffadf8-e3ce-4036-890f-ccf51ad540a7")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "05f222d5-8a84-45a9-9b05-1206f2ca75e1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 10kΩ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "48c46c74-0bca-4695-af27-59d633a971c5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9a94985-d31c-4e01-a26c-5cac23dbd5d5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "24372091"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d25e45df-c00f-4b93-ab7f-12d461011fd2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Price" "0.004USD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6861bcdd-c230-4e36-9f8d-c020b9fb1539")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "025631e1-7f76-40fe-ac76-fc18d80c6f8e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "71469882-bd2e-4344-89a3-4548b2928d08")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3077e23e-409d-4074-b00f-22b7640734f3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3b003109-d620-40ad-8a59-43f977a905af")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "433a42b9-7545-429d-b195-3441e19de788")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2f699955-b754-4065-8412-5ddd9f1055df")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "0402WGF1002TCE"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fad28366-a5d2-4feb-b9f0-b28c92742986")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Resistance" "10kΩ"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "23519898-5561-4d49-bf5c-bc4a98dd380e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power(Watts)" "62.5mW"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a8276e60-6aff-4b20-9e00-d1693553be17")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "068ffc1d-0799-4644-a349-a02770c3f08d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "50V"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e73c6ced-b49e-4127-8516-0c4915d96bba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b36aec25-9897-44ac-a98f-3557746e8c23")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9520eac3-63be-40eb-a86f-f68e86d27d82")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "27615419-3c74-4764-8c4c-3b218300fe10")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/c4647c37-0a26-4c48-a6b1-28eda36bcbfa")
+		(sheetname "/")
+		(sheetfile "G1000-partial-panel.kicad_sch")
+		(solder_mask_margin 0.038)
+		(fp_line
+			(start -0.9 -0.4)
+			(end -0.9 0.4)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "8871fae9-4206-4481-bcfe-435703f29ea4")
+		)
+		(fp_line
+			(start -0.9 -0.4)
+			(end 0.9 -0.4)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "8bf1c3a7-4600-4860-9dbf-dc80ad4e1a34")
+		)
+		(fp_line
+			(start 0.9 -0.4)
+			(end 0.9 0.4)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "02b0d522-f1cd-4b0f-a1c6-58a9204d0ac2")
+		)
+		(fp_line
+			(start 0.9 0.4)
+			(end -0.9 0.4)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "931456c2-fa82-4f8a-a91a-34d0ff046de8")
+		)
+		(fp_rect
+			(start -0.53 -0.27)
+			(end 0.53 0.27)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "40602cf5-2afa-4d43-8a53-020464865acc")
+		)
+		(pad "1" smd roundrect
+			(at -0.5 0)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 1 "unconnected-(R1-Pad1)")
+			(pintype "passive")
+			(uuid "3bbd65c8-8e87-43cc-8d3a-c3aa8e2fb93a")
+		)
+		(pad "2" smd roundrect
+			(at 0.5 0)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 2 "unconnected-(R1-Pad2)")
+			(pintype "passive")
+			(uuid "8368a1da-4411-48f5-889a-6bdc02111395")
+		)
+		(embedded_fonts no)
+		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/R_0402.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "PCM_JLCPCB:Hole_Tooling_JLCPCB"
+		(layer "F.Cu")
+		(uuid "aa6ef4a3-faa6-42bb-a55d-4b53fa29ef2d")
+		(at 33.02 127)
+		(property "Reference" "H3"
+			(at 0 -0.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "56d2b2e2-de1f-4d53-ad5e-8bd0e6bffd80")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "20f5c6a8-1b21-4a78-a4e7-ba9c933be8ed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/help/article/How-to-add-tooling-holes-for-PCB-assembly-order"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b35caf66-ed89-4f7b-aab2-2061657f417a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "1. Two or three tooling holes should be added on the PCB, they should be placed in opposite corners of the PCB and as far apart from one another as practical. 2. Tooling holes should be 1.152mm(45.4mil) round non-plated holes with 0.148mm solder mask expansion. 3. Tooling holes are only required for PCB assembly orders. 4. Please try to add tooling holes on empty space and keep them away from traces. If there is no enough room, you can add them to the copper area."
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "79262f00-f66c-4147-83cf-02c89b0f22e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Attrition Qty" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "23f07676-9d0a-40f3-aae5-9d20fc04da2b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Category" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6835355c-0b44-44b8-978b-af4d8af21d06")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Class" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "01fa8632-ac9d-42bf-b3af-1ae09c2de667")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9fdb9ca-4605-4a91-831a-c1bf19a24cb7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "baf57b87-ceba-4165-a1e2-331a3a97b880")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Minimum Qty" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d3b39caf-b08e-4fe0-a776-be6355822100")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Operating Temperature Range" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3ea89d4-e27a-41ba-b857-3bbccd3feff8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3e4d77ca-f058-4bed-94f4-2ff1ad1cb746")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6cc82f9-d1e2-4644-9c2f-880ec3f8152e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power(Watts)" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3b77a267-ea1f-4ed0-a85e-1fdfdae7f9b9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "676b125a-7c22-48fe-9796-4d4f17200582")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Process" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad9b7823-567d-463c-97e8-5dc829a4a175")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Resistance" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "21f3bace-9f4e-4a11-897f-da87de77237b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c9321c4-a266-4770-989e-7538dd1f09e4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Temperature Coefficient" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5303a9d7-39eb-4e82-a27b-ac38bf1c2446")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "140417e9-c040-40e9-a595-f5682ac2a423")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Type" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a986e1e5-430d-4eff-bbdc-519cd11619c8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/35ae03d3-8699-468e-95f9-b970287a3e36")
+		(sheetname "/")
+		(sheetfile "G1000-partial-panel.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "5c9e9470-a735-4523-9ecf-ecc9b29107fc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 1 1)
+			(drill 1.152)
+			(layers "*.Cu" "*.Mask")
+			(solder_mask_margin 0.148)
+			(teardrops
+				(best_length_ratio 0.5)
+				(max_length 1)
+				(best_width_ratio 1)
+				(max_width 2)
+				(curved_edges no)
+				(filter_ratio 0.9)
+				(enabled no)
+				(allow_two_segments no)
+				(prefer_zone_connections no)
+			)
+			(uuid "47a47862-55d0-4e3b-9d6a-6aef737c3c32")
+		)
+		(zone
+			(net 0)
+			(net_name "")
+			(layers "F.Cu" "B.Cu" "F.SilkS" "B.SilkS" "F.Paste" "B.Paste" "B.CrtYd"
+				"F.CrtYd"
+			)
+			(uuid "0613d9f3-bad0-4caa-a970-fa7f4ff608ea")
+			(hatch edge 0.5)
+			(connect_pads
+				(clearance 0)
+			)
+			(min_thickness 0.25)
+			(filled_areas_thickness no)
+			(keepout
+				(tracks not_allowed)
+				(vias not_allowed)
+				(pads not_allowed)
+				(copperpour not_allowed)
+				(footprints not_allowed)
+			)
+			(placement
+				(enabled no)
+				(sheetname "")
+			)
+			(fill
+				(thermal_gap 0.5)
+				(thermal_bridge_width 0.5)
+			)
+			(polygon
+				(pts
+					(xy 32.02 126) (xy 34.02 126) (xy 34.02 128) (xy 32.02 128)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(footprint "PCM_JLCPCB:SOIC-16_L9.9-W3.9-P1.27-LS6.0-BL"
+		(layer "F.Cu")
+		(uuid "d2cb2344-e5c5-40a3-825a-497c330f32e1")
+		(at 69.55 72.26)
+		(descr "SOIC-16_L9.9-W3.9-P1.27-LS6.0-BL footprint")
+		(tags "SOIC-16_L9.9-W3.9-P1.27-LS6.0-BL footprint C233584")
+		(property "Reference" "U1"
+			(at 0 -4.74 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "0f847d26-e001-4364-8019-eba4cd8d9890")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "74HC595D"
+			(at 0 4.74 0)
+			(layer "F.Fab")
+			(uuid "32c99adb-905c-466f-a696-4bcceadc2df6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407241044_Nexperia-74HC595D-118_C5947.pdf"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "28fa4b7e-7510-48bb-a597-32c127335851")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "8 2V~6V 1 Serial to serial or parallel SOIC-16 Shift Registers ROHS"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df0aefa4-24d0-4392-87d5-48d939295402")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C5947"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "99e979c2-43f7-4163-8f20-f8bb7ed655b5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" "361838"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "408bc5b7-e53e-49f5-a31c-df0cc69f1cb8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Price" "0.126USD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f649cb49-7b74-45bf-ae52-0d111c4ca7df")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d06ebdec-c295-4c6c-9785-8001fe676cf9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Minimum Qty" "1"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "364caa2c-15b3-47ef-9128-ff41e3a8c0d5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Attrition Qty" "0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9664bfa6-33e8-413b-8d81-b3735fa1b9d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "efb24859-cafe-492e-93fa-f8d28e84a411")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Category" "Logic ICs,Registers"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8a35edf2-02d7-4454-be66-6926c12072a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Nexperia"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "70bef1c1-394a-4f47-9f35-7fdc1b7fa3be")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "74HC595D,118"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5e4fb713-7153-4f6d-b1ca-d5d96edc6695")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supply Voltage" "2V~6V"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a505b6d5-5c26-49dc-b462-40be64a74d50")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Output Type" "Tri-State"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f574c59-895b-40af-a6ed-6d21c5bed384")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Number Of Bits Per Element" "8"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ee73432f-a171-4f8d-b5c5-9d60240211a2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Operating Temperature" "40°C~+125°C"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8dc0a127-e504-475b-a96f-ca1e85d0e7c8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Function" "串行至并行或串行"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7f69fc77-a673-45fa-a52a-8fcd7e7d7dd9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Series" "74HC"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6db0dfca-5da7-4f06-993d-292c10c217c9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/47dfb180-683a-4a1c-a2d7-8fa3cb4b0d84")
+		(sheetname "/")
+		(sheetfile "G1000-partial-panel.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -5.03 -1.52)
+			(end 5.03 -1.52)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fc51d188-749e-4d78-baea-126d537d7c69")
+		)
+		(fp_line
+			(start -5.03 1.52)
+			(end -5.03 -1.52)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5406afe0-8485-4ed9-a0d2-efb5ec003ca4")
+		)
+		(fp_line
+			(start 5.03 -1.52)
+			(end 5.03 1.52)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "72aafb35-f863-4b56-a69e-2fb0f4cc256e")
+		)
+		(fp_line
+			(start 5.03 1.52)
+			(end -5.03 1.52)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e3752f1e-6fcf-4cb8-8f63-750b9fd85810")
+		)
+		(fp_circle
+			(center -5 1.75)
+			(end -4.97 1.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "d3109e5c-c891-417a-a79c-e344c65d180a")
+		)
+		(fp_line
+			(start -5 -2)
+			(end 5 -2)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "784d8496-ca24-4cfb-ba59-acf9de9e9fe4")
+		)
+		(fp_line
+			(start -5 2)
+			(end -5 -2)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "5175d028-01b4-4c55-b0f9-69f940ee2e97")
+		)
+		(fp_line
+			(start 5 -2)
+			(end 5 2)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "ab2b587e-8984-4ae4-add3-26897c524daf")
+		)
+		(fp_line
+			(start 5 2)
+			(end -5 2)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "806a362d-85f5-48a2-9e7c-678366692d71")
+		)
+		(fp_circle
+			(center -4.45 3.4)
+			(end -4.2 3.4)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "8b82537d-5331-4bef-8e4e-1b3cc631c2b4")
+		)
+		(fp_text user "REF**"
+			(at 0 6.74 0)
+			(layer "F.Fab")
+			(uuid "4b7fbb52-a2cd-491a-be60-bc49d8d8bcc6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd oval
+			(at -4.45 2.74)
+			(size 0.6 1.97)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 6 "unconnected-(U1-Q1-Pad1)")
+			(pinfunction "Q1")
+			(pintype "unspecified")
+			(uuid "50cd3445-b2e3-451f-ace9-7dd4ffff28c6")
+		)
+		(pad "2" smd oval
+			(at -3.17 2.74)
+			(size 0.6 1.97)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 8 "unconnected-(U1-Q2-Pad2)")
+			(pinfunction "Q2")
+			(pintype "unspecified")
+			(uuid "5c2a8dde-48a8-4396-a999-465be4f963e5")
+		)
+		(pad "3" smd oval
+			(at -1.91 2.74)
+			(size 0.6 1.97)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 11 "unconnected-(U1-Q3-Pad3)")
+			(pinfunction "Q3")
+			(pintype "unspecified")
+			(uuid "9928414f-7f6c-4eef-8a13-16110c4f0fa9")
+		)
+		(pad "4" smd oval
+			(at -0.64 2.74)
+			(size 0.6 1.97)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 14 "unconnected-(U1-Q4-Pad4)")
+			(pinfunction "Q4")
+			(pintype "unspecified")
+			(uuid "d51c845e-b8ea-400f-9e30-abd8f06bbf0d")
+		)
+		(pad "5" smd oval
+			(at 0.64 2.74)
+			(size 0.6 1.97)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 10 "unconnected-(U1-Q5-Pad5)")
+			(pinfunction "Q5")
+			(pintype "unspecified")
+			(uuid "8e792978-48b5-4589-b7a9-91c9780aad89")
+		)
+		(pad "6" smd oval
+			(at 1.91 2.74)
+			(size 0.6 1.97)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 13 "unconnected-(U1-Q6-Pad6)")
+			(pinfunction "Q6")
+			(pintype "unspecified")
+			(uuid "a47d4e61-f9a9-467b-8bab-fd74d65e076d")
+		)
+		(pad "7" smd oval
+			(at 3.17 2.74)
+			(size 0.6 1.97)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 17 "unconnected-(U1-Q7-Pad7)")
+			(pinfunction "Q7")
+			(pintype "unspecified")
+			(uuid "eba5e71d-77fa-4731-89dc-2230d5852423")
+		)
+		(pad "8" smd oval
+			(at 4.45 2.74)
+			(size 0.6 1.97)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 9 "unconnected-(U1-GND-Pad8)")
+			(pinfunction "GND")
+			(pintype "unspecified")
+			(uuid "75da64d3-f041-4874-9dce-65a58808ba9f")
+		)
+		(pad "9" smd oval
+			(at 4.45 -2.74)
+			(size 0.6 1.97)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 4 "unconnected-(U1-Q7S-Pad9)")
+			(pinfunction "Q7S")
+			(pintype "unspecified")
+			(uuid "2d546a41-aaa5-448e-9e24-a48ec79474ad")
+		)
+		(pad "10" smd oval
+			(at 3.17 -2.74)
+			(size 0.6 1.97)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 12 "unconnected-(U1-MR#-Pad10)")
+			(pinfunction "MR#")
+			(pintype "unspecified")
+			(uuid "9f323116-1ffe-4a47-90eb-1c6afae3839d")
+		)
+		(pad "11" smd oval
+			(at 1.91 -2.74)
+			(size 0.6 1.97)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 15 "unconnected-(U1-SHCP-Pad11)")
+			(pinfunction "SHCP")
+			(pintype "unspecified")
+			(uuid "da759bd8-ece4-4f56-8ee0-35e4befeab7e")
+		)
+		(pad "12" smd oval
+			(at 0.64 -2.74)
+			(size 0.6 1.97)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 5 "unconnected-(U1-STCP-Pad12)")
+			(pinfunction "STCP")
+			(pintype "unspecified")
+			(uuid "47679f3f-eee9-4de5-a888-ad7533673097")
+		)
+		(pad "13" smd oval
+			(at -0.64 -2.74)
+			(size 0.6 1.97)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 16 "unconnected-(U1-OE#-Pad13)")
+			(pinfunction "OE#")
+			(pintype "unspecified")
+			(uuid "eb6d2732-78ef-489c-9310-b686bbf3da70")
+		)
+		(pad "14" smd oval
+			(at -1.91 -2.74)
+			(size 0.6 1.97)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 7 "unconnected-(U1-DS-Pad14)")
+			(pinfunction "DS")
+			(pintype "unspecified")
+			(uuid "5838c315-1d31-4dd4-9f31-293d2ea8f86f")
+		)
+		(pad "15" smd oval
+			(at -3.17 -2.74)
+			(size 0.6 1.97)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 3 "unconnected-(U1-Q0-Pad15)")
+			(pinfunction "Q0")
+			(pintype "unspecified")
+			(uuid "236a1fc8-0b07-4d10-bc92-05191aad3331")
+		)
+		(pad "16" smd oval
+			(at -4.45 -2.74)
+			(size 0.6 1.97)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 18 "unconnected-(U1-VCC-Pad16)")
+			(pinfunction "VCC")
+			(pintype "unspecified")
+			(uuid "f2b8402c-6c96-4e48-81b4-268c958479b7")
+		)
+		(embedded_fonts no)
+		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/SOIC-16_3.9x9.9mm_P1.27mm.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 -90)
+			)
+		)
+	)
+	(footprint "PCM_JLCPCB:Hole_Tooling_JLCPCB"
+		(layer "F.Cu")
+		(uuid "ec0c1978-760e-4513-a374-8f74c7988eb9")
+		(at 33.02 33.02)
+		(property "Reference" "H1"
+			(at 0 -0.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ef51997d-579b-4b72-8c76-0a7d78618e34")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "66079c43-bc73-41d4-9ce7-24b23496924e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/help/article/How-to-add-tooling-holes-for-PCB-assembly-order"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1bf6fd1a-c927-4ebd-bcd3-44541a93908b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "1. Two or three tooling holes should be added on the PCB, they should be placed in opposite corners of the PCB and as far apart from one another as practical. 2. Tooling holes should be 1.152mm(45.4mil) round non-plated holes with 0.148mm solder mask expansion. 3. Tooling holes are only required for PCB assembly orders. 4. Please try to add tooling holes on empty space and keep them away from traces. If there is no enough room, you can add them to the copper area."
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ba1d04c8-e08b-4b93-8abb-2fb4f663fd94")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Attrition Qty" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "656e4c4e-ffc2-4acd-a7de-e6bd5c5761c2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Category" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dfa5527e-d402-417c-81c6-faba50860375")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Class" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e699bd60-4f4b-4665-8660-c6cac61425f9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7debf97c-c450-4588-b8a1-f1a073f829f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "74973735-b8f9-4d54-8852-53203fff3d4d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Minimum Qty" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "942e0c53-33b1-4ec0-abb7-da9642a96eef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Operating Temperature Range" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f0154848-faf7-4223-b309-2714f145138c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c5e9d239-db24-4484-9721-ff990ea01919")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8c1c8518-b1ea-47c0-9101-a4eb274b7ca5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power(Watts)" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d944fbbe-33ff-4f5a-9630-e1eed11aeb6d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b26bc4c4-6f32-4cd6-8a63-ec35c0adf1bc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Process" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bf84545d-01f8-410b-b7af-d863ca3b0119")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Resistance" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "993fb33a-f742-46d3-9e7f-b0fb3eb29ced")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5bd5257c-2333-4530-86a9-d019f899ca68")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Temperature Coefficient" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "396dc005-d274-4452-9627-90d68ccd2892")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "67f56f8c-24b7-4e15-9359-1a5a3e9691a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Type" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9a1cd10c-d6dc-4e3d-8d76-d679183bc72d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/70dbfbf4-901b-4a67-9f5c-d14049065f93")
+		(sheetname "/")
+		(sheetfile "G1000-partial-panel.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "f0695e9c-982b-4d49-8a3f-84d79cee88b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 1 1)
+			(drill 1.152)
+			(layers "*.Cu" "*.Mask")
+			(solder_mask_margin 0.148)
+			(teardrops
+				(best_length_ratio 0.5)
+				(max_length 1)
+				(best_width_ratio 1)
+				(max_width 2)
+				(curved_edges no)
+				(filter_ratio 0.9)
+				(enabled no)
+				(allow_two_segments no)
+				(prefer_zone_connections no)
+			)
+			(uuid "2d3f301e-e3be-4cf5-8b87-0abd165ca1d9")
+		)
+		(zone
+			(net 0)
+			(net_name "")
+			(layers "F.Cu" "B.Cu" "F.SilkS" "B.SilkS" "F.Paste" "B.Paste" "B.CrtYd"
+				"F.CrtYd"
+			)
+			(uuid "347bc6c0-6f7e-4c29-b0c7-848bb0c123e2")
+			(hatch edge 0.5)
+			(connect_pads
+				(clearance 0)
+			)
+			(min_thickness 0.25)
+			(filled_areas_thickness no)
+			(keepout
+				(tracks not_allowed)
+				(vias not_allowed)
+				(pads not_allowed)
+				(copperpour not_allowed)
+				(footprints not_allowed)
+			)
+			(placement
+				(enabled no)
+				(sheetname "")
+			)
+			(fill
+				(thermal_gap 0.5)
+				(thermal_bridge_width 0.5)
+			)
+			(polygon
+				(pts
+					(xy 32.02 32.02) (xy 34.02 32.02) (xy 34.02 34.02) (xy 32.02 34.02)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(gr_rect
+		(start 30 30)
+		(end 130 130)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "f36d90c9-6aa7-4eaf-b640-ca354458d8dc")
+	)
+	(embedded_fonts no)
+)
