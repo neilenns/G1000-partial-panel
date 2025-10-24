@@ -23,7 +23,17 @@ env:
 
 
 jobs:
-  FabricationAndDocumentation:
+  define-matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      projects: ${{ steps.set-matrix.outputs.projects }}
+    steps:
+      - name: Set matrix
+        id: set-matrix
+        run: |
+          echo "projects=[\"G1000-partial-panel\"]" >> "$GITHUB_OUTPUT"
+
+  generate-docs-and-fab:
     runs-on: ubuntu-latest
     container: ghcr.io/neilenns/kicad:latest
     defaults:
@@ -31,7 +41,7 @@ jobs:
         shell: bash
     strategy:
       matrix:
-        project: ["G1000-partial-panel"]
+        project: ${{ fromJSON(needs.define-matrix.outputs.projects) }}
 
     steps:
       - name: Checkout repository
