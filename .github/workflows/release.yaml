@@ -26,12 +26,12 @@ jobs:
   define-matrix:
     runs-on: ubuntu-latest
     outputs:
-      projects: ${{ steps.set-matrix.outputs.projects }}
+      projects: ${{ steps.define-matrix.outputs.projects }}
     steps:
-      - name: Set matrix
-        id: set-matrix
+      - name: Define matrix
+        id: define-matrix
         run: |
-          echo "projects=[\"G1000-partial-panel\"]" >> "$GITHUB_OUTPUT"
+          echo 'projects=["G1000-partial-panel"]' >> "$GITHUB_OUTPUT"
 
   generate-docs-and-fab:
     runs-on: ubuntu-latest
