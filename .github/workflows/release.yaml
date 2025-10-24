@@ -34,6 +34,7 @@ jobs:
           echo 'projects=["G1000-partial-panel"]' >> "$GITHUB_OUTPUT"
 
   generate-docs-and-fab:
+    needs: define-matrix
     runs-on: ubuntu-latest
     container: ghcr.io/neilenns/kicad:latest
     defaults:
