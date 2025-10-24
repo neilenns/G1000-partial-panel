@@ -16,7 +16,6 @@ permissions:
 
 env:
   outputFolder: "release"
-  projectName: "G1000-partial-panel" # This gets set by cookiecutter when the project is generated
   date: "not set" # This gets set by the date step
   shortSHA: "not set" # This gets set by a step in the workflow
   version: "not set" # This gets set by the get_github_version or workflow_dispatch input
@@ -24,12 +23,47 @@ env:
 
 
 jobs:
-  FabricationAndDocumentation:
+  define-matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      projects: ${{ steps.set-matrix.outputs.projects }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+      - name: Define matrix
+        id: set-matrix
+        run: |
+          set -euo pipefail
+          # Build a JSON array of project folder names found under the projects/ directory
+          if [ ! -d projects ]; then
+            echo 'projects=[]' >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          entries=()
+          for path in projects/*; do
+            [ -d "$path" ] || continue
+            name=$(basename "$path")
+            entries+=("\"$name\"")
+          done
+          if [ ${#entries[@]} -eq 0 ]; then
+            echo 'projects=[]' >> "$GITHUB_OUTPUT"
+          else
+            IFS=,
+            echo "projects=[${entries[*]}]" >> "$GITHUB_OUTPUT"
+          fi
+
+  generate-docs-and-fab:
+    needs: define-matrix
     runs-on: ubuntu-latest
     container: ghcr.io/neilenns/kicad:latest
     defaults:
       run:
         shell: bash
+    strategy:
+      matrix:
+        project: ${{ fromJSON(needs.define-matrix.outputs.projects) }}
+    env:
+      PROJECT_PATH: "projects/${{ matrix.project }}"
 
     steps:
       - name: Checkout repository
@@ -70,7 +104,7 @@ jobs:
       - name: Update project variables
         uses: restackio/update-json-file-action@2.1
         with:
-          file: "${{ env.projectName }}.kicad_pro"
+          file: "${{ env.PROJECT_PATH }}/${{ matrix.project }}.kicad_pro"
           fields: '{"text_variables.DATE": "${{ env.DATE }}", "text_variables.VERSION": "${{ env.version }}"}'
 
       # ------------------------------
@@ -79,9 +113,10 @@ jobs:
 
       # Run the KiCad jobset.
       - name: Run KiCad jobset
+        working-directory: "${{ env.PROJECT_PATH }}"
         run: |
           mkdir -p release/JLCPCB
-          kicad-cli jobset run --file jobs.kicad_jobset "${{ env.projectName }}.kicad_pro"
+          kicad-cli jobset run --file jobs.kicad_jobset "${{ matrix.project }}.kicad_pro"
 
       # ------------------------------
       # --- JLCPCB submissions generation
@@ -89,16 +124,18 @@ jobs:
 
       # Generate the output files and clean up the output for zipping
       - name: JLCPCB - generate output
+        working-directory: "${{ env.PROJECT_PATH }}"
         run: |
-          python3 -m com_github_bennymeg_JLC-Plugin-for-KiCad.cli --excludeDNP -p "${{ env.projectName }}.kicad_pcb"
+          python3 -m com_github_bennymeg_JLC-Plugin-for-KiCad.cli --excludeDNP -p "${{ matrix.project }}.kicad_pcb"
           rm -rf "production/backups"
           mkdir -p ${{ env.outputFolder }}/JLCPCB
           mv production/* ${{ env.outputFolder }}/JLCPCB
           
       - name: JLCPCB - Zip upload file
+        working-directory: "${{ env.PROJECT_PATH }}"
         run: |
           cd "${{ env.outputFolder }}/JLCPCB"
-          zip -r "../${{ env.projectName }}-JLCPCB.zip" .
+          zip -r "../${{ matrix.project }}-JLCPCB.zip" .
           cd ..
           rm -rf JLCPCB
 
@@ -116,7 +153,7 @@ jobs:
           base: main
           labels: ignore-for-release-notes
           add-paths: |
-            docs/*.png
+            ${{ env.PROJECT_PATH }}/docs/*.png
 
       - name: Automerge the pull request
         if: ${{ startsWith(github.ref, 'refs/tags/') }}
@@ -132,13 +169,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           files: |
-            ${{ env.outputFolder }}/${{ env.projectName }}-schematic.pdf
-            ${{ env.outputFolder }}/${{ env.projectName }}-documentation.zip
-            ${{ env.outputFolder }}/${{ env.projectName }}-JLCPCB.zip
+            ${{ env.PROJECT_PATH }}/${{ env.outputFolder }}/${{ matrix.project }}-schematic.pdf
+            ${{ env.PROJECT_PATH }}/${{ env.outputFolder }}/${{ matrix.project }}-documentation.zip
+            ${{ env.PROJECT_PATH }}/${{ env.outputFolder }}/${{ matrix.project }}-JLCPCB.zip
 
       # Attach the artifacts to the workflow run if this is not a release.
       - name: Attach artifacts
         uses: actions/upload-artifact@v4
         if: ${{ !startsWith(github.ref, 'refs/tags/') }}
         with:
-          path: ${{ env.outputFolder }}/
+          name: ${{ matrix.project }}-files
+          path: ${{ env.PROJECT_PATH }}/${{ env.outputFolder }}/
